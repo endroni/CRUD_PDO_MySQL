@@ -1,8 +1,14 @@
 # CRUD_PDO_MySQL
+
 ## Tutorial para criar um CRUD utilizando:
 
-1. WAMPServer
+1. XAMPP
+ - Apache
  - PHP
- - PDO
  - MySQL
- - Workbench
+
+2. PDO
+
+3. Workbench
+
+4. Editor de Texto
