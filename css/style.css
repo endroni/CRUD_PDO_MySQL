@@ -1,0 +1,11 @@
+*{margin: 0;}
+
+.Nav{float:left; width: 100%; background: #000;}
+	.Nav li{float:left; width: 25%; text-align: center; list-style: none;}
+	.Nav a{display:block; width: 100%; padding: 10px 0; color: #FFF; font-weight: bold; text-decoration: none;}
+	.Nav a:hover{background: #666;}
+
+.Content{float:left; width: 100%; padding: 15px;}
+
+
+
