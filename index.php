@@ -4,8 +4,9 @@
 
 <?php
 	include("Class/ClassConexao.php");
-	$Conexao=new ClassConexao();
-	$Conexao->conectaDB();
+	include("Class/ClassCrud.php");
+	$Crud=new ClassCrud();
+
 ?>
 
 <?php
