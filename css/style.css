@@ -1,11 +1,12 @@
-*{margin: 0;}
+*{margin: 0;box-sizing: border-box;}
 
 .Nav{float:left; width: 100%; background: #000;}
 	.Nav li{float:left; width: 25%; text-align: center; list-style: none;}
 	.Nav a{display:block; width: 100%; padding: 10px 0; color: #FFF; font-weight: bold; text-decoration: none;}
 	.Nav a:hover{background: #666;}
 
-.Content{float:left; width: 100%; padding: 15px;}
+.Content{float:left;width: 100%;padding: 15px;background: #000;color: #FFF;}
 
+.Formulario{float:left; width: 70%; height: 300px; background: pink;}
 
 
