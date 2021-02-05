@@ -1,4 +1,5 @@
 <?php
+include('../Class/ClassConexao.php');
 
 	class ClassCrud extends ClassConexao
 	{
@@ -27,6 +28,14 @@
 		{
 			$this->Contador=count($Parametros);
 		}
+
+		#Insert no DB
+		public function insertDB($Tabela, $Condicao, $Parametros){
+			$this->preparedStatements("insert into{$Tabela} values ($Condicao})" , $Parametros);
+			return $this->Crud;
+		}
+
+
 	}
 
 ?>

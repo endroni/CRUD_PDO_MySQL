@@ -1,10 +1,6 @@
 <?php include('Includes/Header.php'); ?>
 
 <div class="Content">
-	<?php
-		include('Class/ClassConexao.php');
-		include('Class/ClassCrud.php');		
-	?>
 
 	<div class="Resultado">
 		
@@ -22,7 +18,11 @@
 
 			<div class="FormularioInput">
 				Sexo:<br>
-				<input type="text" id="Sexo" name="Sexo">
+				<select name="Sexo" id="Sexo">
+					<option value="">Selecione</option>
+					<option value="Masculino">Masculino</option>
+					<option value="Feminino">Feminino</option>
+				</select>
 			</div>
 
 			<div class="FormularioInput">
