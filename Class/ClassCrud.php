@@ -1,5 +1,5 @@
 <?php
-include('../Class/ClassConexao.php');
+include("../Class/ClassConexao.php");
 
 	class ClassCrud extends ClassConexao
 	{
@@ -31,7 +31,7 @@ include('../Class/ClassConexao.php');
 
 		#Insert no DB
 		public function insertDB($Tabela, $Condicao, $Parametros){
-			$this->preparedStatements("insert into{$Tabela} values ($Condicao})" , $Parametros);
+			$this->preparedStatements("insert into {$Tabela} values ({$Condicao})" , $Parametros);
 			return $this->Crud;
 		}
 
