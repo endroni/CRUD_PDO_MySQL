@@ -9,7 +9,7 @@
 
 	<div class="Nav">
 		<li><a href="cadastro.php">Cadastrar</a></li>
-		<li><a href="selecionar">Buscar</a></li>
+		<li><a href="selecao.php">Buscar</a></li>
 		<li><a href="deletar">Apagar</a></li>
 		<li><a href="atualizar">Atualizar</a></li>
 	</div>

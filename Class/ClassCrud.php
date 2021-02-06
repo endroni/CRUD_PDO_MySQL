@@ -1,5 +1,6 @@
 <?php
-include("../Class/ClassConexao.php");
+include("Class/ClassConexao.php");
+// {$_SERVER['DOCUMENT_ROOT']}/
 
 	class ClassCrud extends ClassConexao
 	{
@@ -35,6 +36,11 @@ include("../Class/ClassConexao.php");
 			return $this->Crud;
 		}
 
+		#Select no DB
+		public function selectDB($Campos, $Tabela, $Condicao, $Parametros){
+			$this->preparedStatements("select {$Campos} from {$Tabela} {$Condicao}" , $Parametros);
+			return $this->Crud;
+		}
 
 	}
 
