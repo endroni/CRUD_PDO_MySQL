@@ -25,18 +25,16 @@ include("Class/ClassCrud.php");
 
 			while ($Fetch=$BFetch->fetch(PDO::FETCH_ASSOC)) {
 		?>
-
 				<tr>
-					<td><?php $Fetch['Nome']; ?></td>
-					<td><?php $Fetch['Sexo']; ?></td>
-					<td><?php $Fetch['Cidade']; ?></td>
+					<td><?php $Fetch['nome']; ?></td>
+					<td><?php $Fetch['sexo']; ?></td>
+					<td><?php $Fetch['cidade']; ?></td>
 					<td>
-						<a href="visualizar.php"><img src="img/reading.png" alt="Visualizar"></a>
+						<a href="visualizar.php"><img src="img/lupa.png" alt="Visualizar"></a>
 						<a href="atualizacao.php"><img src="img/edit.png" alt="Editar"></a>
 						<a href="delete.php"><img src="img/delete.png" alt="Deletar"></a>
 					</td>
-				</tr>
-		
+				</tr>		
 		<?php		
 			}
 		?>
