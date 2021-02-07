@@ -30,7 +30,7 @@ include("Class/ClassCrud.php");
 					<td><?php $Fetch['sexo']; ?></td>
 					<td><?php $Fetch['cidade']; ?></td>
 					<td>
-						<a href="visualizar.php"><img src="img/lupa.png" alt="Visualizar"></a>
+						<a href="<?php echo "visualizar.php?id={$Fetch['id']}"; ?>"><img src="img/lupa.png" alt="Visualizar"></a>
 						<a href="atualizacao.php"><img src="img/edit.png" alt="Editar"></a>
 						<a href="delete.php"><img src="img/delete.png" alt="Deletar"></a>
 					</td>

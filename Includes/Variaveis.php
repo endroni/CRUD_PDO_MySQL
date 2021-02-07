@@ -8,10 +8,10 @@
   	}
 
 
-	if(isset($_POST['Nome'])){
-		$Nome=filter_input(INPUT_POST, 'Nome', FILTER_SANITIZE_SPECIAL_CHARS);
-	}elseif(isset($GET['Nome'])){
-		$Nome=filter_input(INPUT_GET, 'Nome', FILTER_SANITIZE_SPECIAL_CHARS);
+	if(isset($_POST['nome'])){
+		$Nome=filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+	}elseif(isset($GET['nome'])){
+		$Nome=filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
   	}else{
   		$Nome="";
   	}
