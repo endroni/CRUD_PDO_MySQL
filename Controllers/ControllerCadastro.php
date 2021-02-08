@@ -24,10 +24,10 @@ if($Acao=='Cadastrar') {
 		"nome=?, sexo=?, cidade=?",
 		"id=?",
 		array(
-			$nome,
-			$sexo,
-			$cidade,
-			$id
+			$Nome,
+			$Sexo,
+			$Cidade,
+			$Id
 		)
 	);
 	echo "Cadastro Atualizado com suceso!";
