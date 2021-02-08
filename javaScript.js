@@ -12,3 +12,15 @@ $("#FormCadastro").on('submit',function(event){
 		}
 	})
 });
+
+/* Confirmar os dados antes de deletar*/
+$('.Deletar') .on('click',function(event){
+	event.preventDefault();
+
+	var Link=$(this).attr('href');
+	if(confirm("Deseja mesmo apagar esse dado?")) {
+		window.location.href=Link;
+	}else{
+		return false;
+	}
+});

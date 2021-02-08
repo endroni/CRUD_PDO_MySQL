@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>CRUD</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css"> 
+	<script type="text/javascript" src="javaScript.js"></script> <!-- Javascript próprio -->
+	<script src="Includes/zepto.min.js"></script> <!-- JavaScript zepto -->
 </head>
 <body>
 

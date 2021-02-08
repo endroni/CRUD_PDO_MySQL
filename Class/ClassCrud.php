@@ -42,6 +42,13 @@ include("Class/ClassConexao.php");
 			return $this->Crud;
 		}
 
+
+		#Deletar dados no DB
+		public function deleteDB($Tabela, $Condicao, $Parametros) {
+			$this->preparedStatements("delete from {$Tabela} where {$Condicao}" , $Parametros);
+			return $this->Crud;
+		}		
+
 	}
 
 ?>
