@@ -47,7 +47,13 @@ include("ClassConexao.php");
 		public function deleteDB($Tabela, $Condicao, $Parametros) {
 			$this->preparedStatements("delete from {$Tabela} where {$Condicao}" , $Parametros);
 			return $this->Crud;
-		}		
+		}	
+
+		#Atualiza o DB
+		public function updateDB($Tabela, $Set, $Condicao, $Parametros ){
+			$this->preparedStatements("update {$Tabela} set {$Set} where {$Condicao}" , $Parametros);
+			return $this->Crud;
+		}
 
 	}
 

@@ -1,4 +1,12 @@
 <?php
+	if(isset($_POST['Acao'])){
+		$Acao=filter_input(INPUT_POST, 'Acao', FILTER_SANITIZE_SPECIAL_CHARS);
+	}elseif(isset($GET['Acao'])){
+		$Acao=filter_input(INPUT_GET, 'Acao', FILTER_SANITIZE_SPECIAL_CHARS);
+  	}else{
+  		$Acao="";
+  	}
+
 	if(isset($_POST['id'])){
 		$Id=filter_input(INPUT_POST, 'id', FILTER_SANITIZE_SPECIAL_CHARS);
 	}elseif(isset($GET['id'])){
