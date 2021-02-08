@@ -31,7 +31,7 @@ include("Class/ClassCrud.php");
 					<td><?php $Fetch['cidade']; ?></td>
 					<td>
 						<a href="<?php echo "visualizar.php?id={$Fetch['id']}"; ?>"><img src="img/lupa.png" alt="Visualizar"></a>
-						<a href="atualizacao.php"><img src="img/edit.png" alt="Editar"></a>
+						<a href="<?php echo "cadastro.php?id={$Fetch['id']}"; ?>"><img src="img/edit.png" alt="Editar"></a>
 						<a Class="Deletar" href="<?php echo "Controllers/ControllerDeletar.php?id={$Fetch['id']}"; ?>"><img src="img/delete.png" alt="Deletar"></a>
 					</td>
 				</tr>		

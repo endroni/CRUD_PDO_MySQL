@@ -1,5 +1,5 @@
 <?php
-include("Class/ClassConexao.php");
+include("ClassConexao.php");
 // {$_SERVER['DOCUMENT_ROOT']}/
 
 	class ClassCrud extends ClassConexao

@@ -5,7 +5,7 @@
 	<div class="Formulario">
 		<h1 class="Center">Cadastro</h1>
 
-		<form name="FormCadastro" id="Form" method="POST" action="Controllers/ControllerCadastro.php">
+		<form name="FormCadastro" id="Form" method="POST" action="./Controllers/ControllerCadastro.php">
 
 			<div class="FormularioInput">
 				Nome:<br>
