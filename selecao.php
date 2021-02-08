@@ -26,9 +26,9 @@ include("Class/ClassCrud.php");
 			while ($Fetch=$BFetch->fetch(PDO::FETCH_ASSOC)) {
 		?>
 				<tr>
-					<td><?php $Fetch['nome']; ?></td>
-					<td><?php $Fetch['sexo']; ?></td>
-					<td><?php $Fetch['cidade']; ?></td>
+					<td><?php echo $Fetch['nome']; ?></td>
+					<td><?php echo $Fetch['sexo']; ?></td>
+					<td><?php echo $Fetch['cidade']; ?></td>
 					<td>
 						<a href="<?php echo "visualizar.php?id={$Fetch['id']}"; ?>"><img src="img/lupa.png" alt="Visualizar"></a>
 						<a href="<?php echo "cadastro.php?id={$Fetch['id']}"; ?>"><img src="img/edit.png" alt="Editar"></a>
